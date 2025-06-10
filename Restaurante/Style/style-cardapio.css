@@ -1,0 +1,260 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  .menu nav a:hover {
+    background-color: aliceblue;
+    border-color: #000;
+    transform: scale(1.05);
+  }
+  
+  /* Botão reserva */
+  .botao-reserva {
+    background-color: #d4a055;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .botao-reserva:hover {
+    background-color: #a87c30;
+    transform: scale(1.05);
+  }
+  
+  /* Título da seção */
+  .Titulo-inicio {
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  
+  .Titulo-inicio h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .Titulo-inicio h2 {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  /* Seção de pratos */
+  .titulo-pratos {
+    padding: 40px 20px;
+  }
+  
+  .titulo-pratos > h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Container dos pratos */
+  #conteudo-principal {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #pratos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+  }
+  
+  /* Card de cada prato */
+  .opcoes {
+    flex: 1 1 300px;
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    box-sizing: border-box;
+  }
+  
+  .opcoes img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  
+  .titulo-preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .titulo-preco h2 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .preco {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .opcoes p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Rodapé */
+  #rodape {
+    background-color: #0b1120;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+  }
+  
+  #rodape h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  
+  #rodape h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  
+  #rodape p,
+  #rodape li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 8px 0;
+  }
+  
+  .coluna {
+    flex: 1 1 240px;
+    margin: 12px 24px;
+  }
+  
+  /* Ícones sociais */
+  .icones-sociais {
+    margin-top: 20px;
+  }
+  
+  .icones-sociais img {
+    width: 20px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #1e293b;
+    padding: 10px;
+  }
+  
+  /* Ícones pequenos (contato) */
+  #rodape .coluna p img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Links rápidos */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .atalhos {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .atalhos:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Horários */
+  .horarios p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  
+  .rodape-final {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+    margin-top: 40px;
+    padding-top: 25px;
+    font-size: 15px;
+    color: #a1a1aa;
+  }
+  
+  /* Utilitários */
+  .cor-transparente {
+    color: rgba(255, 255, 255, 0.664);
+  }
+  
+/* LINHAS DISCRETA ENTRE OS PRATOS E O TITULO */
+
+  .linha h1 {
+    position: relative;
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+  }
+  
+  .linha h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.123); 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Restaurante Sabor & Arte</title>
+    <link rel="stylesheet" href="/Style/style-contato.css" />
+    <link rel="icon" href="/Imagens/Icones/icone.jpg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="logo">Sabor & Arte</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/cardapio.html">Cardápio</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a class="botao-reserva" href="/reserva.html">Reservar Mesa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo">
+            <h1>Entre em Contato</h1>
+            <p>Adoraríamos ouvir de você! Seja para reservas, feedback ou qualquer outra questão, nossa equipe está
+                pronta para ajudar.</p>
+        </div>
+
+        <div class="container-contato">
+
+            <!-- Envie uma Mensagem -->
+            <div class="box mensagem">
+                <h1>Envie uma Mensagem</h1>
+                <form action="processa.php" method="post">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Motivo do contato" required />
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+
+                    <input type="submit" value="Enviar" />
+                </form>
+            </div>
+
+            <!-- Coluna Direita -->
+            <div class="lado-direito">
+
+                <!-- Nossas Informações -->
+                <div class="coluna-informacoes">
+                    <div class="box informacoes">
+                        <h2>Nossas Informações</h2>
+                        <p class="cor-transparente-box"><img src="/Imagens/Icones/icone-localizacao.png" alt=""> Av.
+                            Paulista, 1578, Bela Vista<br>São Paulo - SP, 01310-200</p>
+                        <p class="cor-transparente-box"><img src="/Imagens/Icones/icone-telefone.png" alt=""> (11)
+                            3456-7890</p>
+                        <p class="cor-transparente-box"><img src="/Imagens/Icones/icone-email.png" alt="">
+                            contato@saborarte.com.br</p>
+                    </div>
+                </div>
+
+                <!-- Horário de Funcionamento -->
+                <div class="box horarios">
+                    <h2>Horário de Funcionamento</h2>
+                    <p class="cor-transparente-box"><strong>Segunda - Quinta</strong> <span>12h00 - 23h00</span></p>
+                    <p class="cor-transparente-box"><strong>Sexta - Sábado</strong> <span>12h00 - 00h00</span></p>
+                    <p class="cor-transparente-box"><strong>Domingo</strong> <span>12h00 - 22h00</span></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="home-botao-container">
+            <a href="/home.html" class="home-botao">Voltar para Home</a>
+        </div>
+
+    </main>
+
+    <footer id="rodape">
+        <div class="coluna">
+            <h1>Sabor & Arte</h1>
+            <p class="cor-transparente">Experiências gastronômicas inesquecíveis em um ambiente sofisticado e acolhedor.
+            </p>
+            <div class="icones-sociais">
+                <a href="https://facebook.com" target="_blank"><img src="/Imagens/Icones/icone-facebook.png"
+                        alt="Facebook" /></a>
+                <a href="https://instagram.com" target="_blank"><img src="/Imagens/Icones/icone-instagram.png"
+                        alt="Instagram" /></a>
+                <a href="https://twitter.com" target="_blank"><img src="/Imagens/Icones/icone-twitter.png"
+                        alt="Twitter/X" /></a>
+                <a href="https://wa.me" target="_blank"><img src="/Imagens/Icones/icone-whatssap.png"
+                        alt="WhatsApp" /></a>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <h2>Links Rápidos</h2>
+            <ul>
+                <li><a class="atalhos" href="/home.html">Home</a></li>
+                <li><a class="atalhos" href="/cardapio.html">Cardápio</a></li>
+                <li><a class="atalhos" href="/sobre.html">Sobre Nós</a></li>
+                <li><a class="atalhos" href="/contato.html">Contato</a></li>
+                <li><a class="atalhos" href="/reserva.html">Reservas</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna">
+            <h2>Contato</h2>
+            <p class="cor-transparente"><img src="/Imagens/Icones/icone-localizacao.png" alt=""> Av. Paulista, 1578,
+                Bela Vista<br>São Paulo - SP, 01310-200</p>
+            <p class="cor-transparente"><img src="/Imagens/Icones/icone-telefone.png" alt=""> (11) 3456-7890</p>
+            <p class="cor-transparente"><img src="/Imagens/Icones/icone-email.png" alt=""> contato@saborarte.com.br</p>
+        </div>
+
+        <div class="rodape-final">
+            <p>© 2025 Sabor & Arte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

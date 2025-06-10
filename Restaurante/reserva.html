@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style-reserva.css">
+    <link rel="icon" href="/Imagens/Icones/icone.jpg" type="Image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="logo">Sabor & Arte</h1>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/cardapio.html">Cardápio</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a class="botao-reserva" href="/reserva.html">Reservar Mesa</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="intro-destaque">
+            <h2>Reservar Mesa</h2>
+            <p>Faça uma reserva e garanta seu lugar em nosso restaurante.</p>
+        </div>
+
+        <div class="container-centralizada">
+            <div id="reserva-mesa">
+                <form action="processa.php" method="post">
+                    <div class="linha">
+                        <div class="campo">
+                            <label>Nome Completo</label>
+                            <input type="text" name="nome" placeholder="Seu nome completo">
+                        </div>
+                        <div class="campo">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="seu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label>Telefone</label>
+                        <input type="text" name="telefone" placeholder="(11) 99999-9999">
+                    </div>
+
+                    <div class="linha">
+                        <div class="campo">
+                            <label>Data</label>
+                            <input type="date" name="data">
+                        </div>
+                        <div class="campo">
+                            <label>Horário</label>
+                            <input type="time" name="hora">
+                        </div>
+                        <div class="campo">
+                            <label>Pessoas</label>
+                            <input type="number" name="qnt-pessoas" placeholder="Quantas?">
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label>Observações (opcional)</label>
+                        <textarea name="observacoes" rows="7"
+                            placeholder="Alguma informação adicional, preferências alimentares, etc."></textarea>
+                    </div>
+
+                    <input type="submit" value="Confirmar Reserva">
+                </form>
+            </div>
+
+            <div class="informacoes-importantes">
+                <h2>Informações Importantes</h2>
+                <div class="box-interna">
+                    <div class="coluna">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda - Quinta: 12h00 - 23h00</p>
+                        <p>Sexta - Sábado: 12h00 - 00h00</p>
+                        <p>Domingo: 12h00 - 22h00</p>
+                    </div>
+                    <div class="coluna">
+                        <h3>Políticas de Reserva</h3>
+                        <p>• Confirmação por email em até 2 horas</p>
+                        <p>• Tolerância de 15 minutos de atraso</p>
+                        <p>• Cancelamento até 2 horas antes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer id="rodape">
+        <div class="coluna">
+            <h1>Sabor & Arte</h1>
+            <p class="cor-transparente">Experiências gastronômicas inesquecíveis em um ambiente sofisticado e acolhedor.
+            </p>
+            <div class="icones-sociais">
+                <a href="https://facebook.com" target="_blank"><img src="/Imagens/Icones/icone-facebook.png"
+                        alt="Facebook" /></a>
+                <a href="https://instagram.com" target="_blank"><img src="/Imagens/Icones/icone-instagram.png"
+                        alt="Instagram" /></a>
+                <a href="https://twitter.com" target="_blank"><img src="/Imagens/Icones/icone-twitter.png"
+                        alt="Twitter/X" /></a>
+                <a href="https://wa.me" target="_blank"><img src="/Imagens/Icones/icone-whatssap.png"
+                        alt="WhatsApp" /></a>
+            </div>
+        </div>
+
+        <div class="coluna">
+            <h2>Links Rápidos</h2>
+            <ul>
+                <li><a class="atalhos" href="/home.html">Home</a></li>
+                <li><a class="atalhos" href="/cardapio.html">Cardápio</a></li>
+                <li><a class="atalhos" href="/sobre.html">Sobre Nós</a></li>
+                <li><a class="atalhos" href="/contato.html">Contato</a></li>
+                <li><a class="atalhos" href="/reserva.html">Reservas</a></li>
+            </ul>
+        </div>
+
+        <div class="coluna">
+            <h2>Contato</h2>
+            <p class="cor-transparente"><img src="/Imagens/Icones/icone-localizacao.png" alt=""> Av. Paulista, 1578,
+                Bela Vista<br>São Paulo - SP, 01310-200</p>
+            <p class="cor-transparente"><img src="/Imagens/Icones/icone-telefone.png" alt=""> (11) 3456-7890</p>
+            <p class="cor-transparente"><img src="/Imagens/Icones/icone-email.png" alt=""> contato@saborarte.com.br</p>
+        </div>
+
+        <div class="rodape-final">
+            <p>© 2025 Sabor & Arte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

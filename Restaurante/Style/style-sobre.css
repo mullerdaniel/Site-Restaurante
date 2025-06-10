@@ -1,0 +1,297 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.menu nav a:hover {
+    background-color: aliceblue;
+    border-color: black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.botao-reserva {
+  background-color: #d4a055;
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.botao-reserva:hover {
+  background-color: rgb(126, 99, 26) !important;
+  border-color: rgb(126, 99, 26) !important;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.intro-destaque {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.intro-destaque h2 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.intro-destaque {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.intro-destaque h2 {
+    font-family: serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.divisor {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #888, transparent);
+    margin: 40px auto;
+    width: 95%;
+}
+
+.sobre-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.bloco .texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.bloco .imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.bloco .imagem img {
+    width: 570px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bloco h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.bloco p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+
+.bloco.filosofia {
+    flex-direction: row-reverse;
+}
+
+.centralizado {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.centralizado h2 {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.centralizado p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.galeria-centralizada {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.galeria-centralizada img {
+    width: 370px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.voltar-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.botao-voltar {
+  background-color: #d4a055;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.botao-voltar:hover {
+  background-color: rgb(126, 99, 26);
+}
+
+
+/* RODAPÉ */
+
+#rodape {
+  background-color: #0b1120;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+
+#rodape h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#rodape h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#rodape p,
+#rodape li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.coluna {
+  flex: 1 1 240px;
+  margin: 12px 24px;
+}
+
+.icones-sociais {
+  margin-top: 20px;
+}
+
+.icones-sociais img {
+  width: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.horarios p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+#rodape img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.rodape-final {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 25px;
+  font-size: 15px;
+  color: #a1a1aa;
+}
+
+.atalhos {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.atalhos:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.cor-transparente {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.fonte {
+  font-family: serif;
+  font-size: 50px;
+}

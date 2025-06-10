@@ -1,0 +1,607 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.menu nav a:hover {
+  background-color: aliceblue;
+  border-color: #000000;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.botao-reserva {
+  background-color: #d4a055;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.ver-mais{
+  text-decoration: none;
+  color:black;
+}
+
+/* IMAGEM DO MENU E TEXTOS E BOTOES */
+
+.imagem-conteudo {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('/Imagens/imagem-menu.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  box-sizing: border-box;
+  color: white;
+  overflow: hidden;
+}
+
+
+.conteudoHome {
+  max-width: 600px;
+  z-index: 1;
+}
+
+.titulo-imagem {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-family: serif;
+  font-size: 60px;
+}
+
+.texto-imagem {
+  font-size: 1.3em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.botoes-imagem {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.botao-imagem-cardapio {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao-imagem-mesa {
+  background-color: #ffffff00;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botao-imagem-cardapio:hover {
+  background-color: rgba(150, 149, 149, 0.603);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.botao-imagem-mesa:hover {
+  background-color: rgb(150, 149, 149, 0.603);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.pratos-destaques {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 20px;
+  transform: translateX(-15%);
+}
+
+.pratos-destaques h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.pratos-destaques p {
+  font-size: 1.1em;
+  color: #555555;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* PRATOS */
+
+#pratos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px;
+  justify-content: flex-start;
+}
+
+.opcoes {
+  flex: 1 1 45%;
+  min-width: 280px;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.opcoes img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+
+
+/* Título do prato */
+.opcoes h2 {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+/* Preço do prato */
+.opcoes .preco {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f39c12;
+  margin-bottom: 8px;
+}
+
+/* Descrição do prato */
+.opcoes p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.opcoes h2:last-child {
+  font-size: 1em;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.titulo-preco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.opcoes .preco {
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+  color: #f39c12;
+}
+
+.opcoes h2:last-child {
+  font-size: 1em;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.titulo-preco h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.titulo-preco .preco {
+  color: #040404;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+
+
+/* lateral */
+
+#conteudo-principal {
+  display: flex;
+  gap: 30px;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+#pratos-container {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+#info-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#info-lateral>div {
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+#info-lateral #video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 10px;
+}
+
+#reserva-de-mesa {
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+/* HORARIOS */
+
+#horario-funcionamento-container {
+  max-width: 1000px;
+}
+
+#horario-funcionamento-container>h2:first-child {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 8px;
+}
+
+#horario-funcionamento-container>div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+#horario-funcionamento-container h2 {
+  font-size: 1em;
+  color: #333333;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/* FORMES */
+
+
+#reserva-de-mesa form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+#reserva-de-mesa h2 {
+  font-size: 0.95em;
+  margin: 4px 0;
+
+}
+
+#reserva-de-mesa form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#reserva-de-mesa input[type="text"],
+#reserva-de-mesa input[type="email"],
+#reserva-de-mesa input[type="date"],
+#reserva-de-mesa input[type="time"],
+#reserva-de-mesa input[type="submit"] {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+#reserva-de-mesa input[type="text"]:focus,
+#reserva-de-mesa input[type="email"]:focus,
+#reserva-de-mesa input[type="date"]:focus,
+#reserva-de-mesa input[type="time"]:focus {
+  border-color: #d4a055;
+  outline: none;
+  transform: scale(1.05);
+}
+
+#reserva-de-mesa input[type="submit"] {
+  background-color: #d4a055;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#reserva-de-mesa input[type="submit"]:hover {
+  background-color: #a87c30;
+  transform: scale(1.05);
+}
+
+
+/* COMENTARIOS */
+
+
+#titulo-comentarios {
+  text-align: center;
+  margin: 50px auto 30px auto;
+  max-width: 900px;
+  padding: 0 15px;
+}
+
+
+.main-Comentarios {
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 40px 0;
+  box-sizing: border-box;
+  margin-top: 180px;
+}
+
+#comentarios {
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  max-width: 90%;
+  margin: 0 15px 40px 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: left;
+  font-style: italic;
+}
+
+#comentarios p:first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #ff9900;
+}
+
+#comentarios img.icone-comentarios {
+  width: 40px;
+  height: 40px;
+  margin: 15px 0;
+  border-radius: 50%;
+}
+
+#comentarios h2 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#comentarios h3 {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+  color: #777;
+  font-style: normal;
+}
+
+#comentarios img.icone-comentarios,
+#comentarios h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#comentarios .user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* PARTE FINAL DO SITE */
+
+.titulo-final {
+  display: flex;
+  justify-content: center;
+}
+
+.texto-final {
+  display: flex;
+  justify-content: center;
+}
+
+.email-final {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.email-final input[type="email"] {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 300px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.email-final input[type="email"]:focus {
+  border-color: #d4a055;
+  outline: none;
+  transform: scale(1.05);
+}
+
+
+/* RODAPÉ */
+
+#rodape {
+  background-color: #0b1120;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+
+#rodape h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#rodape h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#rodape p,
+#rodape li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.coluna {
+  flex: 1 1 240px;
+  margin: 12px 24px;
+}
+
+.icones-sociais {
+  margin-top: 20px;
+}
+
+.icones-sociais img {
+  width: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.horarios p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+#rodape img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.rodape-final {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 25px;
+  font-size: 15px;
+  color: #a1a1aa;
+}
+
+.atalhos {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.atalhos:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.cor-transparente {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.fonte {
+  font-family: serif;
+  font-size: 50px;
+}
+
+
+

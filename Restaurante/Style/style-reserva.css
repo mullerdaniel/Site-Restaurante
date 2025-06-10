@@ -1,0 +1,304 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.menu nav a:hover {
+    background-color: aliceblue;
+    border-color: black;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.botao-reserva {
+    background-color: #d4a055;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.botao-reserva:hover {
+    background-color: rgb(126, 99, 26) !important;
+    border-color: rgb(126, 99, 26) !important;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.intro-destaque {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.intro-destaque h2 {
+    font-family: serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container-centralizada {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#reserva-mesa {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+
+
+#reserva-mesa form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.linha {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+.campo textarea {
+  height: 120px;
+}
+
+.observacoes{
+    max-height: 350px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(150, 149, 149, 0.603);
+    transition: 0.3s ease;
+    font-size: 0.95em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #d4a055;
+    outline: none;
+    transform: scale(1.01);
+}
+
+input[type="submit"] {
+    background-color: #d4a055;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #a87c30;
+}
+
+.informacoes-importantes {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.informacoes-importantes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    color: #222;
+    font-family: serif;
+}
+
+.box-interna {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 280px;
+}
+
+.coluna h3 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+    font-family: serif;
+}
+
+.coluna p {
+    margin: 6px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* RODAPÉ */
+
+#rodape {
+  background-color: #0b1120;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+#rodape h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#rodape h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#rodape p,
+#rodape li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.coluna {
+  flex: 1 1 240px;
+  margin: 12px 24px;
+}
+
+.icones-sociais {
+  margin-top: 20px;
+}
+
+.icones-sociais img {
+  width: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.horarios p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+#rodape img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.rodape-final {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 25px;
+  font-size: 15px;
+  color: #a1a1aa;
+}
+
+.atalhos {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.atalhos:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.cor-transparente {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.fonte {
+  font-family: serif;
+  font-size: 50px;
+}
+

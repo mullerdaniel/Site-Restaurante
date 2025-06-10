@@ -1,0 +1,263 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.menu nav a:hover {
+  background-color: aliceblue;
+  border-color: #000000;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.botao-reserva {
+  background-color: #d4a055;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+/* TITULO */
+
+.titulo {
+  display: flex;
+  flex-direction: column; /* empilha o h1 e o p */
+  align-items: center;    /* alinha no eixo horizontal */
+  justify-content: center;/* alinha no eixo vertical (precisa de altura definida) */
+  text-align: center;
+  height: 200px; /* ou o que fizer sentido */
+}
+
+
+/* Layout principal */
+.container-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+/* Box padrão */
+.box {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Esquerda */
+.box.mensagem {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+/* Direita */
+.lado-direito {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+/* Ajusta form e inputs */
+.box.mensagem form input,
+.box.mensagem form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.box.mensagem form input[type="submit"] {
+  background-color: #d4a055;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.box.mensagem form input[type="submit"]:hover {
+  background-color: #a87c30;
+}
+
+.coluna-informacoes p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre o ícone e o texto */
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.coluna-informacoes p img {
+  width: 24px;  /* tamanho fixo da largura */
+  height: auto; /* mantém a proporção */
+  display: inline-block;
+}
+
+.cor-transparente-box {
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.home-botao {
+  background-color: #a1a1a1;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;          /* faz o botão ser block para funcionar o margin auto */
+  width: max-content;      /* mantém o botão com largura do conteúdo */
+  margin: 20px auto 0;     /* centraliza horizontalmente */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.home-botao:hover {
+  background-color: #a87c30;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(212, 160, 85, 0.7);
+}
+
+
+
+
+
+/* RODAPÉ */
+
+#rodape {
+  background-color: #0b1120;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+#rodape h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#rodape h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#rodape p,
+#rodape li {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.coluna {
+  flex: 1 1 240px;
+  margin: 12px 24px;
+}
+
+.icones-sociais {
+  margin-top: 20px;
+}
+
+.icones-sociais img {
+  width: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.horarios p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+#rodape img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.rodape-final {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  margin-top: 40px;
+  padding-top: 25px;
+  font-size: 15px;
+  color: #a1a1aa;
+}
+
+.atalhos {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.atalhos:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.cor-transparente {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.fonte {
+  font-family: serif;
+  font-size: 50px;
+}
